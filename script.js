@@ -14,7 +14,7 @@ userform.addEventListener("submit",function(event){
 
     console.log(savedName);
     console.log(savedAge);
-    
+
     document.getElementById("greeting").textContent =
       "Hello" + name + "!Welcome to my webpage.";
 
@@ -29,7 +29,7 @@ userform.addEventListener("submit",function(event){
          "Your are an adult! Keep working towards your goals.";
     }
 
-     let months = age*12;
+    let months = age*12; 
     document.getElementById("ageMessage").textContent +=
       "That is" + months + "months!";
 
@@ -40,10 +40,10 @@ userform.addEventListener("submit",function(event){
     document.getElementById("quote").innerHTML = quote;
  });
 
-let savedName = localStorage.getItem("userName");
-let savedAge = localStorage.getItem("userAge");
+ let savedName = localStorage.getItem("userName");
+ let savedAge = localStorage.getItem("userAge");
 
-if(savedName!== null && savedAge !==null){
+ if(savedName!== null && savedAge !==null){
     document.getElementById("name").value=savedName;
     document.getElementById("age").value=savedAge;
 
@@ -53,5 +53,3 @@ if(savedName!== null && savedAge !==null){
     document.getElementById("ageMessage").textContent=
      "You are" + savedAge + "years old.";
  }
-
-
