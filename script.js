@@ -5,3 +5,10 @@ userform.addEventListener("submit",function(event){
 
     let name = document.getElementById("name").value;
     let age =Number(document.getElementById("age").value);
+    
+    document.getElementById("greeting").textContent =
+      "Hello" + name + "!Welcome to my webpage.";
+
+    document.getElementById("ageMessage").textContent =
+      "Your" + age + "years old.";
+
