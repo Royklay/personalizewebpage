@@ -43,4 +43,15 @@ userform.addEventListener("submit",function(event){
 let savedName = localStorage.getItem("userName");
 let savedAge = localStorage.getItem("userAge");
 
+if(savedName!== null && savedAge !==null){
+    document.getElementById("name").value=savedName;
+    document.getElementById("age").value=savedAge;
+
+    document.getElementById("greeting").textContent=
+     "Hello" + savedName + "!Welcome to my webpage.";
+
+    document.getElementById("ageMessage").textContent=
+     "You are" + savedAge + "years old.";
+ }
+
 
