@@ -12,3 +12,11 @@ userform.addEventListener("submit",function(event){
     document.getElementById("ageMessage").textContent =
       "Your" + age + "years old.";
 
+    if(age <18){
+        document.getElementById("ageMessage").textContent =
+        "You are young! Keep learning and growing.";
+    } else{
+        document.getElementById("ageMessage").textContent =
+         "Your are an adult! Keep working towards your goals.";
+    }
+
