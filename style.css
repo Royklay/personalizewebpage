@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #1769aa;
+}
+
+form {
+    background-color: white;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #cccccc;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1769aa;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d4777;
+}
+
+#greeting,
+#ageMessage,
+#quote {
+    margin: 20px auto;
+    color: #1769aa;
+    font-size: 18px;
+}
