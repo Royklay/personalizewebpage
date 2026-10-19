@@ -5,6 +5,15 @@ userform.addEventListener("submit",function(event){
 
     let name = document.getElementById("name").value;
     let age =Number(document.getElementById("age").value);
+
+    localStorage.setItem("userName", name);
+    localStorage.setItem("userAge", age);
+
+    let savedName = localStorage.getItem("userName");
+    let savedAge = localStorage.getItem("userAge");
+
+    console.log(savedName);
+    console.log(savedAge);
     
     document.getElementById("greeting").textContent =
       "Hello" + name + "!Welcome to my webpage.";
@@ -30,4 +39,8 @@ userform.addEventListener("submit",function(event){
     }
     document.getElementById("quote").innerHTML = quote;
  });
+
+let savedName = localStorage.getItem("userName");
+let savedAge = localStorage.getItem("userAge");
+
 
