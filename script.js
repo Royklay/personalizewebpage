@@ -20,3 +20,7 @@ userform.addEventListener("submit",function(event){
          "Your are an adult! Keep working towards your goals.";
     }
 
+     let months = age*12;
+    document.getElementById("ageMessage").textContent +=
+      "That is" + months + "months!";
+
