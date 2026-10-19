@@ -24,3 +24,10 @@ userform.addEventListener("submit",function(event){
     document.getElementById("ageMessage").textContent +=
       "That is" + months + "months!";
 
+    let quote ="";
+    for (let i= 1;i<=5; i++){
+        quote += "Believe in yourself and keep going!<br>";
+    }
+    document.getElementById("quote").innerHTML = quote;
+ });
+
